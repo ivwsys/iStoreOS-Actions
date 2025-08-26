@@ -36,6 +36,7 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始构建固件..."
 PACKAGES=""
 
 # 官方集成列表
+PACKAGES="$PACKAGES zoneinfo-asia"                # zoneinfo, 修复 openwrt-openvfd 时区不生效问题
 #PACKAGES="$PACKAGES adb"                          # Android调试桥，用于与Android设备通信调试（未启用）
 #PACKAGES="$PACKAGES adb-enablemodem"              # 启用ADB调制解调器模式的工具（未启用）
 #PACKAGES="$PACKAGES appfilter"                    # 应用过滤工具（未启用）
