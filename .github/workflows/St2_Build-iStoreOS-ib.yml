@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       openwrt_board:
-        description: "请选择设备型号（默认当下主流设备）"
+        description: "请选择设备型号"
         required: true
         default: "s905x3-h96max"
         type: choice
